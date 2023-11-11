@@ -1,0 +1,311 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Blog MERN",
+    "dateExported": "2023-06-03T16:49:42.584Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "ad9082bc-88c3-4ea1-a78a-46775907a6aa",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2023-06-03T08:29:09.142Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "535212cc-810c-4f20-97db-fcb94d27b310",
+            "name": "Users",
+            "containerId": "",
+            "created": "2023-06-03T09:11:05.272Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "98b89219-f423-4971-9442-01cbe59a6bb8",
+            "name": "Post",
+            "containerId": "",
+            "created": "2023-06-03T10:35:29.293Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "8839ee13-79d1-4ab3-8100-75dfccf6c04d",
+            "name": "categories",
+            "containerId": "",
+            "created": "2023-06-03T15:04:26.495Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "a4fd981e-d3dd-4e22-a913-573af24383cf",
+            "colId": "01042c7c-1153-4fd3-a4bf-1b888aecbdf4",
+            "containerId": "ad9082bc-88c3-4ea1-a78a-46775907a6aa",
+            "name": "regsiter",
+            "url": "http://localhost:3000/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-06-03T08:29:19.149Z",
+            "modified": "2023-06-03T09:24:08.326Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"test\",\n  \"email\": \"test@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f5abf5d9-80a2-4ffc-8196-f5d239da4979",
+            "colId": "01042c7c-1153-4fd3-a4bf-1b888aecbdf4",
+            "containerId": "ad9082bc-88c3-4ea1-a78a-46775907a6aa",
+            "name": "login",
+            "url": "http://localhost:3000/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-06-03T09:01:36.036Z",
+            "modified": "2023-06-03T09:24:30.774Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"test@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "03249248-fd41-4c99-aed3-b829aa7b26b6",
+            "colId": "01042c7c-1153-4fd3-a4bf-1b888aecbdf4",
+            "containerId": "535212cc-810c-4f20-97db-fcb94d27b310",
+            "name": "update user",
+            "url": "http://localhost:3000/users/647affe794e751192ee4f8bd",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-03T09:11:10.741Z",
+            "modified": "2023-06-03T09:25:49.963Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\": \"647affe794e751192ee4f8bd\",\n  \"username\": \"test user\",\n  \"email\": \"vivekKumar112@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b228434a-ab3d-4db9-9d1b-f180d99664f3",
+            "colId": "01042c7c-1153-4fd3-a4bf-1b888aecbdf4",
+            "containerId": "535212cc-810c-4f20-97db-fcb94d27b310",
+            "name": "delete user",
+            "url": "http://localhost:3000/users/647b06b84ff8f9cf94e38c79",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-06-03T09:37:22.751Z",
+            "modified": "2023-06-03T09:37:58.794Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\" : \"647b06b84ff8f9cf94e38c79\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "92578a0d-ad73-416a-ae28-be471cbab311",
+            "colId": "01042c7c-1153-4fd3-a4bf-1b888aecbdf4",
+            "containerId": "535212cc-810c-4f20-97db-fcb94d27b310",
+            "name": "get user",
+            "url": "http://localhost:3000/users/647afd0c9be1576758c01219",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-06-03T10:32:13.397Z",
+            "modified": "2023-06-03T10:32:32.972Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8c73a8f3-e1c6-469e-8387-c6b957c05fb5",
+            "colId": "01042c7c-1153-4fd3-a4bf-1b888aecbdf4",
+            "containerId": "98b89219-f423-4971-9442-01cbe59a6bb8",
+            "name": "add post",
+            "url": "http://localhost:3000/posts/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-06-03T10:39:48.230Z",
+            "modified": "2023-06-03T15:02:42.424Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"🔥 🐇 post from yadav11adu@\",\n  \"desc\": \"something special\",\n  \"email\": \"vivekKumar112@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aa5d1825-d08d-412f-b828-f1b2da5eb1bb",
+            "colId": "01042c7c-1153-4fd3-a4bf-1b888aecbdf4",
+            "containerId": "98b89219-f423-4971-9442-01cbe59a6bb8",
+            "name": "update post",
+            "url": "http://localhost:3000/posts/647b1930eccedd9073ef3b7d",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-06-03T10:48:48.774Z",
+            "modified": "2023-06-03T10:49:32.517Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"second 2 [updated] post from yadav11adu@\",\n  \"desc\": \"something special\",\n  \"email\": \"yadav11adu@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d44b120a-7554-417f-bd0a-c1694755fdc3",
+            "colId": "01042c7c-1153-4fd3-a4bf-1b888aecbdf4",
+            "containerId": "98b89219-f423-4971-9442-01cbe59a6bb8",
+            "name": "delete post",
+            "url": "http://localhost:3000/posts/647b1c3337c0213b28a36c93",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-06-03T10:51:51.259Z",
+            "modified": "2023-06-03T10:56:22.832Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"yadav11adu@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7c1d464e-1ba9-46c7-9e58-dbd3f8a5d3d3",
+            "colId": "01042c7c-1153-4fd3-a4bf-1b888aecbdf4",
+            "containerId": "98b89219-f423-4971-9442-01cbe59a6bb8",
+            "name": "get post by id",
+            "url": "http://localhost:3000/posts/647b18faeccedd9073ef3b7b",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-06-03T10:57:45.727Z",
+            "modified": "2023-06-03T10:58:01.290Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bc54c325-c521-441e-9ee5-85c51657862a",
+            "colId": "01042c7c-1153-4fd3-a4bf-1b888aecbdf4",
+            "containerId": "98b89219-f423-4971-9442-01cbe59a6bb8",
+            "name": "get all post",
+            "url": "http://localhost:3000/posts",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-06-03T10:58:42.586Z",
+            "modified": "2023-06-03T10:59:37.049Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "af6eb3ef-5569-43b3-8f57-022ba5d15206",
+            "colId": "01042c7c-1153-4fd3-a4bf-1b888aecbdf4",
+            "containerId": "98b89219-f423-4971-9442-01cbe59a6bb8",
+            "name": "get all post of email",
+            "url": "http://localhost:3000/posts?email=yadav11adu@gmail.com",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-06-03T15:01:22.593Z",
+            "modified": "2023-06-03T15:01:50.440Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "email",
+                    "value": "yadav11adu@gmail.com",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "1d94b4e5-814b-4d04-9a26-a3568de063f0",
+            "colId": "01042c7c-1153-4fd3-a4bf-1b888aecbdf4",
+            "containerId": "98b89219-f423-4971-9442-01cbe59a6bb8",
+            "name": "get all post of categories",
+            "url": "http://localhost:3000/posts?cat=[]",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-06-03T15:02:59.728Z",
+            "modified": "2023-06-03T15:03:25.602Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "cat",
+                    "value": "[]",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "0303cf94-682c-4913-9e05-67d0095662f0",
+            "colId": "01042c7c-1153-4fd3-a4bf-1b888aecbdf4",
+            "containerId": "8839ee13-79d1-4ab3-8100-75dfccf6c04d",
+            "name": "create category",
+            "url": "http://localhost:3000/categories",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2023-06-03T15:06:23.498Z",
+            "modified": "2023-06-03T15:09:11.764Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"GitHub\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9f454f8e-ddee-4cde-8638-86cf9bc0faf6",
+            "colId": "01042c7c-1153-4fd3-a4bf-1b888aecbdf4",
+            "containerId": "8839ee13-79d1-4ab3-8100-75dfccf6c04d",
+            "name": "get all category",
+            "url": "http://localhost:3000/categories",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2023-06-03T15:10:25.084Z",
+            "modified": "2023-06-03T15:10:34.782Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d546c9de-bcf6-4a14-9848-fcd654efb77e",
+            "colId": "01042c7c-1153-4fd3-a4bf-1b888aecbdf4",
+            "containerId": "",
+            "name": "uploads image",
+            "url": "http://localhost:3000/upload",
+            "method": "POST",
+            "sortNum": 150000,
+            "created": "2023-06-03T16:01:27.092Z",
+            "modified": "2023-06-03T16:05:19.068Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "c:\\Users\\hp\\Downloads\\MV5BYzJjMTYyMjQtZDI0My00ZjE2LTkyNGYtOTllNGQxNDMyZjE0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
